@@ -1,11 +1,9 @@
 package com.example.crudswagger.controller;
 
-import com.example.crudswagger.dto.ProductDTO;
 import com.example.crudswagger.dto.ResponseDTO;
 import com.example.crudswagger.entity.Product;
 import com.example.crudswagger.service.ProductService;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -52,7 +50,7 @@ public class ProductController {
     }
 
     @PutMapping
-    public ResponseEntity<ResponseDTO<Product>> updateProduct(@RequestBody Product product, Errors errors) {
+    public ResponseEntity<ResponseDTO> updateProduct(@RequestBody Product product, Errors errors) {
         ResponseDTO<Product> response = new ResponseDTO<>();
         if(errors.hasErrors()) {
             response.setMessage("Gagal mengupdate product");
@@ -62,7 +60,7 @@ public class ProductController {
         response.setHttpStatus(HttpStatus.OK);
         response.setMessage("Product berhasil diupdate");
         response.setData(productService.addProduct(product));
-
+        log.info("Response nya berbentuk {}", response.getData());
         return ResponseEntity.ok().body(response);
     }
 

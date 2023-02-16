@@ -3,10 +3,10 @@ POST http://localhost:8080/api/v1/products
 Content-Type: application/json
 
 {
-  "name" : "Bakso Malang",
-  "description" : "Bakso Kuah",
-  "stock" : 100,
-  "price" : 10000
+  "name" : "Indomie",
+  "description" : "Indomie goreng",
+  "stock" : 1000,
+  "price" : 2000
 }
 
 ### GET All Products
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 {
   "id" : 1,
-  "name" : "Bakso Presiden",
+  "name" : "Bakso Sapi",
   "description" : "Bakso Kuah",
   "stock" : 100,
   "price" : 10000
