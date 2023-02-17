@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Microservice-IKON.iml" filepath="$PROJECT_DIR$/Microservice-IKON.iml" />
       <module fileurl="file://$PROJECT_DIR$/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/auth-service/auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/crud-swagger/crud-swagger.iml" filepath="$PROJECT_DIR$/crud-swagger/crud-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket-service/websocket-service.iml" filepath="$PROJECT_DIR$/websocket-service/websocket-service.iml" />
     </modules>
   </component>
 </project>
