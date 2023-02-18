@@ -1,17 +1,25 @@
 package com.ikon.websocketservice.controller;
 
 import com.ikon.websocketservice.model.Message;
+import com.ikon.websocketservice.storage.UserStorage;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MessageController {
 
-    @MessageMapping("/chat")
-    @SendTo("/topic/message")
-    public Message greet(Message message) throws Exception {
-        Thread.sleep(1000);
-        return new Message("Your message: " + message.getContent());
+    @Autowired
+    private SimpMessagingTemplate simpMessagingTemplate;
+
+    @MessageMapping("/chat/{to}")
+    public void sendMessage(@DestinationVariable String to, Message message) {
+        System.out.println("handling send message: " + message + " to: " + to);
+        boolean isExists = UserStorage.getInstance().getUsers().contains(to);
+        if (isExists) {
+            simpMessagingTemplate.convertAndSend("/topic/messages/" + to, message);
+        }
     }
 }

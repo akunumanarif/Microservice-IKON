@@ -1,21 +1,15 @@
 package com.ikon.websocketservice.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+import java.util.Date;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Message {
-    @JsonProperty
-    private String content;
-
-    public Message() {
-
-    }
-
-    public Message(String content) {
-        this.content = content;
-    }
-
+    private String message;
+    private String fromLogin;
 }
