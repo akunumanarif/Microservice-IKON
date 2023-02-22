@@ -1,5 +1,5 @@
 ### Add Product
-POST http://localhost:8080/api/v1/products
+POST http://ikoncrudaws-env.eba-w5kpiwmn.ap-northeast-1.elasticbeanstalk.com/api/v1/products
 Content-Type: application/json
 
 {
@@ -10,12 +10,12 @@ Content-Type: application/json
 }
 
 ### GET All Products
-GET http://localhost:8080/api/v1/products
+GET http://ikoncrudaws-env.eba-w5kpiwmn.ap-northeast-1.elasticbeanstalk.com/api/v1/products
 Accept: application/json
 
 
-### GET All Products
-PUT http://localhost:8080/api/v1/products
+###
+PUT http://ikoncrudaws-env.eba-w5kpiwmn.ap-northeast-1.elasticbeanstalk.com/api/v1/products
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 }
 
 ### Delete Prod
-DELETE http://localhost:8080/api/v1/products/4
+DELETE http://ikoncrudaws-env.eba-w5kpiwmn.ap-northeast-1.elasticbeanstalk.com/api/v1/products/4
