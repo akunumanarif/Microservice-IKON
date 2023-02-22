@@ -1,0 +1,31 @@
+GET localhost:8086/books
+
+###
+POST localhost:8086/books
+Content-Type: application/json
+
+{
+  "isbn" : "Filsafat",
+  "judul" : "Filsafat Barat",
+  "penulis" : "Niczhe",
+  "deskripsi" : "Filsafat Barat",
+  "kategori" : "Filsafat"
+}
+
+###
+GET localhost:8086/books/1
+
+###
+PUT localhost:8086/books/1
+Content-Type: application/json
+
+{
+  "isbn" : "Filsafat",
+  "judul" : "Filsafat Barat",
+  "penulis" : "Niczhe",
+  "deskripsi" : "Filsafat Barat",
+  "kategori" : "Filsafat"
+}
+
+###
+DELETE localhost:8086/books/1
