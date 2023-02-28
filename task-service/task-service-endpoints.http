@@ -1,0 +1,13 @@
+POST http://localhost:8083/api/v1/tasks
+Content-Type: application/json
+
+{
+  "name" : "Setup golang project",
+  "description" : "Alterra Project",
+  "dueDate": "2023-04-01",
+  "projectId" : 2,
+  "status" : "TODO"
+}
+
+###
+GET http://localhost:8083/api/v1/tasks

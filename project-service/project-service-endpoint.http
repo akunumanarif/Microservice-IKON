@@ -2,8 +2,9 @@ POST http://localhost:8082/api/v1/projects
 Content-Type: application/json
 
 {
-  "name" : "Project Euler",
-  "description" : "Euler Algorithm"
+
+  "name" : "Golang App",
+  "description" : "Make Golang app"
 }
 
 ###

@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/crud-redis/pom.xml" />
         <option value="$PROJECT_DIR$/project-service/pom.xml" />
         <option value="$PROJECT_DIR$/task-service/pom.xml" />
+        <option value="$PROJECT_DIR$/team-service/pom.xml" />
       </list>
     </option>
   </component>

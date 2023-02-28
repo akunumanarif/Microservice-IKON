@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "projects")
@@ -16,12 +17,13 @@ import javax.persistence.*;
 public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long projectId;
 
     @Column(name = "name", nullable = false)
     private String name;
     @Column(name = "description")
     private String description;
+
 
 //    @ManyToOne
 //    @JoinColumn(name = "team_id")

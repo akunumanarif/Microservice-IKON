@@ -23,24 +23,36 @@ public class ProjectController {
         return projectService.getAllProjects();
     }
 
+
     @PostMapping
-    public ResponseEntity<ResponseDTO<ProjectDTO>> createProject(@RequestBody ProjectDTO project, Errors errors) {
-        ResponseDTO<ProjectDTO> response = new ResponseDTO<>();
-        if(errors.hasErrors()) {
-            response.setMessage("Gagal menambahkan Project");
-            response.setHttpStatus(HttpStatus.BAD_REQUEST);
-            response.setData(null);
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
-        }
-        response.setHttpStatus(HttpStatus.OK);
-        response.setMessage("Product berhasil ditambahkan");
-        log.info("Masuk sini");
-        response.setData(projectService.createProject(project));
-        log.info("Sampe sini kah?");
+    public Project createProject(@RequestBody Project project) {
+        return projectService.createProject(project);
+    }
 
-        return ResponseEntity.ok().body(response);
+//    @PostMapping
+//    public ResponseEntity<ResponseDTO<ProjectDTO>> createProject(@RequestBody ProjectDTO project, Errors errors) {
+//        ResponseDTO<ProjectDTO> response = new ResponseDTO<>();
+//        if(errors.hasErrors()) {
+//            response.setMessage("Gagal menambahkan Project");
+//            response.setHttpStatus(HttpStatus.BAD_REQUEST);
+//            response.setData(null);
+//            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+//        }
+//        response.setHttpStatus(HttpStatus.OK);
+//        response.setMessage("Product berhasil ditambahkan");
+//        log.info("Masuk sini");
+//        response.setData(projectService.createProject(project));
+//        log.info("Sampe sini kah?");
+//
+//        return ResponseEntity.ok().body(response);
+//
+//
+//    }
 
-
+    @GetMapping("/{projectId}")
+    public Project findByProjectId(@PathVariable("projectId") Long projectId) {
+        log.info("Class: ProjectController, method: findDepartmentById...");
+        return projectService.findByProjectId(projectId);
     }
 
 }
