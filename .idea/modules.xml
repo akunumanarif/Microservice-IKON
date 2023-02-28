@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/crud-redis/crud-redis.iml" filepath="$PROJECT_DIR$/crud-redis/crud-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/crud-swagger/crud-swagger.iml" filepath="$PROJECT_DIR$/crud-swagger/crud-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-service/project-service.iml" filepath="$PROJECT_DIR$/project-service/project-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task-service/task-service.iml" filepath="$PROJECT_DIR$/task-service/task-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/websocket-service/websocket-service.iml" filepath="$PROJECT_DIR$/websocket-service/websocket-service.iml" />
     </modules>
   </component>

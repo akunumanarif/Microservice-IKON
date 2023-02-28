@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="auth-service" />
+        <module name="task-service" />
         <module name="crud-swagger" />
         <module name="crud-redis" />
         <module name="project-service" />
@@ -19,6 +20,7 @@
       <module name="crud-redis" target="17" />
       <module name="crud-swagger" target="17" />
       <module name="project-service" target="17" />
+      <module name="task-service" target="17" />
       <module name="websocket-service" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -28,6 +30,7 @@
       <module name="crud-redis" options="-parameters" />
       <module name="crud-swagger" options="-parameters" />
       <module name="project-service" options="-parameters" />
+      <module name="task-service" options="-parameters" />
       <module name="websocket-service" options="-parameters" />
     </option>
   </component>
