@@ -11,7 +11,9 @@
         <module name="crud-redis" />
         <module name="task-service" />
         <module name="crud-swagger" />
+        <module name="rabbitmq-producer-service" />
         <module name="team-service" />
+        <module name="task-service (1)" />
         <module name="project-service" />
         <module name="websocket-service" />
       </profile>
@@ -21,7 +23,9 @@
       <module name="crud-redis" target="17" />
       <module name="crud-swagger" target="17" />
       <module name="project-service" target="17" />
+      <module name="rabbitmq-producer-service" target="17" />
       <module name="task-service" target="17" />
+      <module name="task-service (1)" target="17" />
       <module name="team-service" target="17" />
       <module name="websocket-service" target="17" />
     </bytecodeTargetLevel>
@@ -32,7 +36,9 @@
       <module name="crud-redis" options="-parameters" />
       <module name="crud-swagger" options="-parameters" />
       <module name="project-service" options="-parameters" />
+      <module name="rabbitmq-producer-service" options="-parameters" />
       <module name="task-service" options="-parameters" />
+      <module name="task-service (1)" options="-parameters" />
       <module name="team-service" options="-parameters" />
       <module name="websocket-service" options="-parameters" />
     </option>

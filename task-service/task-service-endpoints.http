@@ -10,4 +10,4 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8083/api/v1/tasks
+GET http://localhost:8083/api/v1/tasks/2

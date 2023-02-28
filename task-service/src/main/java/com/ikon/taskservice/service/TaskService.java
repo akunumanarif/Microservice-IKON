@@ -42,7 +42,7 @@ public class TaskService {
         Task task = taskRepository.findByTaskId(taskId);
 
         ProjectDTO projectDTO =
-                restTemplate.getForObject("http://department-service:8087/api/v1/departments/" + task.getProjectId(),
+                restTemplate.getForObject("http://localhost:8082/api/v1/projects/" + task.getProjectId(),
                         ProjectDTO.class);
         responseTemplate.setTask(task);
         responseTemplate.setProjectDTO(projectDTO);
