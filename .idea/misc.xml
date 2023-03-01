@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/team-service/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-consumer-service/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-producer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-service/pom.xml" />
       </list>
     </option>
   </component>

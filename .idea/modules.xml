@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/auth-service/auth-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/crud-redis/crud-redis.iml" filepath="$PROJECT_DIR$/crud-redis/crud-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/crud-swagger/crud-swagger.iml" filepath="$PROJECT_DIR$/crud-swagger/crud-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-service/project-service.iml" filepath="$PROJECT_DIR$/project-service/project-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq-producer-service/rabbitmq-producer-service.iml" filepath="$PROJECT_DIR$/rabbitmq-producer-service/rabbitmq-producer-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/task-service/task-service.iml" filepath="$PROJECT_DIR$/task-service/task-service.iml" />

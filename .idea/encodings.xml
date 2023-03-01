@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/auth-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/crud-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/crud-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-consumer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-producer-service/src/main/java" charset="UTF-8" />
