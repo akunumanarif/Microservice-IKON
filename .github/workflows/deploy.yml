@@ -42,20 +42,22 @@ jobs:
 
       - name: Build and push Docker images
         uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: ./docker-compose.yaml
-          push: true
-          tags: |
-            docker.io/${{ secrets.DOCKER_USERNAME }}/gateway-service:latest
-            docker.io/${{ secrets.DOCKER_USERNAME }}/auth-service:latest
-            docker.io/${{ secrets.DOCKER_USERNAME }}/project-service:latest
-            docker.io/${{ secrets.DOCKER_USERNAME }}/task-service:latest
-            docker.io/${{ secrets.DOCKER_USERNAME }}/rabbitmq-consumer-service:latest
-            docker.io/${{ secrets.DOCKER_USERNAME }}/rabbitmq-producer-service:latest
+#        with:
+#          context: .
+#          file: ./docker-compose.yaml
+#          push: true
+#          tags: |
+#            docker.io/${{ secrets.DOCKER_USERNAME }}/gateway-service:latest
+#            docker.io/${{ secrets.DOCKER_USERNAME }}/auth-service:latest
+#            docker.io/${{ secrets.DOCKER_USERNAME }}/project-service:latest
+#            docker.io/${{ secrets.DOCKER_USERNAME }}/task-service:latest
+#            docker.io/${{ secrets.DOCKER_USERNAME }}/rabbitmq-consumer-service:latest
+#            docker.io/${{ secrets.DOCKER_USERNAME }}/rabbitmq-producer-service:latest
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          make
 
 
 
