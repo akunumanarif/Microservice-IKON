@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ master ]
+    branches: [ DAY-22 ]
 
   workflow_dispatch:
 
