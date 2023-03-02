@@ -14,11 +14,8 @@ down :
 remove :
 	docker image rm -f ${APP_IMAGE_LIST}
 
-up:
-	docker compose up -d
-
 build:
-	docker compose build
+	docker compose build 
 #
 # restart: down up
 #
