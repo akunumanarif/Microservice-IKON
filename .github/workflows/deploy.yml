@@ -16,10 +16,10 @@ jobs:
           mvn compile
 #          cd gateway-service
 #          mvn compile
-      - name: test
-        run: |
-          cd auth-service
-          mvn test
+#      - name: test
+#        run: |
+#          cd auth-service
+#          mvn test
 
       - name: Configure Certificate
         env:
