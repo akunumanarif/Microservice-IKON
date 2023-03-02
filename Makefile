@@ -15,7 +15,7 @@ remove :
 	docker image rm -f ${APP_IMAGE_LIST}
 
 up:
-	docker compose up -d
+	docker compose up -d --no-cache
 
 build:
 	docker compose build
