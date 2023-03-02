@@ -14,17 +14,17 @@ down :
 remove :
 	docker image rm -f ${APP_IMAGE_LIST}
 
-up:
-	docker compose up -d
-
-build:
-	docker compose build
-
-restart: down up
-
-env:
-	cp .env.example .env
-	nano .env
+# up:
+# 	docker compose up -d
+#
+# build:
+# 	docker compose build
+#
+# restart: down up
+#
+# env:
+# 	cp .env.example .env
+# 	nano .env
 
 push:
 	$(foreach img, ${APP_IMAGE_LIST}, \
