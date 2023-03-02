@@ -14,7 +14,7 @@ services:
       - "8080:8080"
   auth-service:
     platform: 'linux/amd64'
-    image: 'auth-service:latest' 
+    image: 'auth-service:latest'
     container_name: auth-service
     build:
       context: ./auth-service
