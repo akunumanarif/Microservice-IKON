@@ -19,3 +19,4 @@ COPY --from=maven /usr/src/app/target/${JAR_FILE} /opt/app
 EXPOSE 8084
 
 ENTRYPOINT ["java", "-jar", "rabbitmq-producer-service-0.0.1-SNAPSHOT.jar"]
+
