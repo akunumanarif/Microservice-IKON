@@ -1,7 +1,9 @@
-package com.beyonder.rabbitmqproducerservice.controller;
+package com.ikon.rabbitmqproducerservice.controller;
 
 import com.beyonder.rabbitmqproducerservice.config.RabbitProducerConfig;
 import com.beyonder.rabbitmqproducerservice.dto.*;
+import com.ikon.rabbitmqproducerservice.dto.RabbitMQProducerConsumerDTO;
+import com.ikon.rabbitmqproducerservice.dto.ResponseDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

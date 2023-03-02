@@ -1,6 +1,6 @@
-package com.beyonder.rabbitmqconsumerservice.exception;
+package com.ikon.rabbitmqconsumerservice.exception;
 
-import com.beyonder.rabbitmqconsumerservice.dto.ResponseDTO;
+import com.ikon.rabbitmqconsumerservice.dto.ResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

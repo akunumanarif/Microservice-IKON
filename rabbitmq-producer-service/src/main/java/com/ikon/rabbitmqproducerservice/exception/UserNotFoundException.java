@@ -1,4 +1,4 @@
-package com.beyonder.rabbitmqconsumerservice.exception;
+package com.ikon.rabbitmqproducerservice.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +9,6 @@ import lombok.ToString;
 @Data
 @NoArgsConstructor
 @ToString
-public class UserLessonNotFoundException extends RuntimeException{
+public class UserNotFoundException extends RuntimeException{
     public String msg;
 }

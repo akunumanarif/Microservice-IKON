@@ -1,4 +1,4 @@
-package com.beyonder.rabbitmqproducerservice.exception;
+package com.ikon.rabbitmqproducerservice.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

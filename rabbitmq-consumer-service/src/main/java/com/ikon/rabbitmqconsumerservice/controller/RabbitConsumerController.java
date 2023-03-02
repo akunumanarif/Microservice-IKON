@@ -1,7 +1,7 @@
-package com.beyonder.rabbitmqconsumerservice.controller;
+package com.ikon.rabbitmqconsumerservice.controller;
 
-import com.beyonder.rabbitmqconsumerservice.config.RabbitConsumerConfig;
-import com.beyonder.rabbitmqconsumerservice.dto.RabbitMQProducerConsumerDTO;
+import com.ikon.rabbitmqconsumerservice.config.RabbitConsumerConfig;
+import com.ikon.rabbitmqconsumerservice.dto.RabbitMQProducerConsumerDTO;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

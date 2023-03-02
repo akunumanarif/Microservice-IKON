@@ -1,13 +1,22 @@
-package com.beyonder.rabbitmqconsumerservice.exception;
+package com.ikon.rabbitmqproducerservice.exception;
 
-import com.beyonder.rabbitmqconsumerservice.dto.ResponseDTO;
+import com.ikon.rabbitmqproducerservice.dto.ResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
-public class UserLessonGlobalException {
+public class UserGlobalException {
+
+    @ExceptionHandler(value = UserNotFoundException.class)
+    public ResponseEntity<ResponseDTO<Object>> globalException(UserNotFoundException e) {
+        return new ResponseEntity<>(ResponseDTO.builder()
+                .httpStatus(HttpStatus.NOT_FOUND)
+                .message("Not Found")
+                .data(e.getMessage())
+                .build(), HttpStatus.NOT_FOUND);
+    }
 
     @ExceptionHandler(value = Exception.class)
     public ResponseEntity<ResponseDTO<Object>> globalException(Exception e) {
@@ -17,4 +26,5 @@ public class UserLessonGlobalException {
                 .data(e.getMessage())
                 .build(), HttpStatus.BAD_REQUEST);
     }
+
 }

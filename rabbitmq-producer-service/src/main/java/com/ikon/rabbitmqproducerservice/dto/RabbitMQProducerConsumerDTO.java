@@ -1,4 +1,4 @@
-package com.beyonder.rabbitmqproducerservice.dto;
+package com.ikon.rabbitmqproducerservice.dto;
 
 import lombok.*;
 
