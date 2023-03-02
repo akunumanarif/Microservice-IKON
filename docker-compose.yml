@@ -6,7 +6,7 @@ services:
     image: 'gateway-service:latest'
     container_name: gateway-service
     build:
-      context: ../gateway-service
+      context: ./gateway-service
       dockerfile: Dockerfile
     expose:
       - "8080"
@@ -17,7 +17,7 @@ services:
     image: 'auth-service:latest'
     container_name: auth-service
     build:
-      context: ../auth-service
+      context: ./auth-service
       dockerfile: Dockerfile
     depends_on:
       - user-db
@@ -36,7 +36,7 @@ services:
     image: 'rabbitmq-producer-service:latest'
     container_name: rabbitmq-producer-service
     build:
-      context: ../rabbitmq-producer-service
+      context: ./rabbitmq-producer-service
       dockerfile: Dockerfile
     depends_on:
       - rabbitmq
@@ -55,7 +55,7 @@ services:
     image: 'rabbitmq-consumer-service:latest'
     container_name: rabbitmq-consumer-service
     build:
-      context: ../rabbitmq-consumer-service
+      context: ./rabbitmq-consumer-service
       dockerfile: Dockerfile
     depends_on:
       - rabbitmq
@@ -75,7 +75,7 @@ services:
     image: 'project-service:latest'
     container_name: project-service
     build:
-      context: ../project-service
+      context: ./project-service
       dockerfile: Dockerfile
     depends_on:
       - project-db
@@ -94,7 +94,7 @@ services:
     image: 'task-service:latest'
     container_name: task-service
     build:
-      context: ../task-service
+      context: ./task-service
       dockerfile: Dockerfile
     depends_on:
       - task-db
