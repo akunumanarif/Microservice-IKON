@@ -94,7 +94,7 @@ services:
     image: 'task-service:latest'
     container_name: task-service
     build:
-      context: ./task-service
+      context: task-service
       dockerfile: Dockerfile
     depends_on:
       - task-db
