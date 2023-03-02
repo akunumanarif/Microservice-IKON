@@ -17,8 +17,8 @@ remove :
 # up:
 # 	docker compose up -d
 #
-# build:
-# 	docker compose build
+build:
+	docker compose build
 #
 # restart: down up
 #
