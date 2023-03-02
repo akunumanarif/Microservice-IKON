@@ -13,6 +13,7 @@ jobs:
       - name: compile
         run: |
           cd auth-service
+          mvn clean install
           mvn compile -X
 #          cd gateway-service
 #          mvn compile
