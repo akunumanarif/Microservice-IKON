@@ -1,7 +1,18 @@
 version: '3'
 
 services:
-  authentication-service:
+  gateway-service:
+    platform: 'linux/amd64'
+    image: 'gateway-service:latest'
+    container_name: gateway-service
+    build:
+      context: ./gateway-service
+      dockerfile: Dockerfile
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+  auth-service:
     platform: 'linux/amd64'
     image: 'auth-service:latest'
     container_name: auth-service
@@ -127,7 +138,7 @@ services:
       - POSTGRES_PASSWORD=task_db
       - POSTGRES_DB=task_db
     volumes:
-      - person_db:/var/lib/mysql/data
+      - task_db:/var/lib/mysql/data
     ports:
       - "3308:3308"
   rabbitmq:
