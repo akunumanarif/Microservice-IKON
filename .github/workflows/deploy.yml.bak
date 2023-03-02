@@ -1,7 +1,6 @@
 on:
   push:
     branches: [ DAY-22 ]
-
   workflow_dispatch:
 
 jobs:
