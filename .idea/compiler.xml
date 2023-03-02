@@ -20,7 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="auth-service" target="17" />
+      <module name="auth-service" target="11" />
       <module name="crud-redis" target="17" />
       <module name="crud-swagger" target="17" />
       <module name="gateway-service" target="17" />
