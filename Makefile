@@ -4,7 +4,7 @@ DOCKERHUB_USERNAME ?= ${{DOCKERHUB_USERNAME}}
 # DockerHub repository name
 DOCKERHUB_REPOSITORY ?= ${{DOCKERHUB_REPOSITORY_NAME}}
 
-APP_IMAGE_LIST ?= gateway-service auth-service rabbitmq-producer-service rabbitmq-consumer-service project-service task-service
+APP_IMAGE_LIST ?= gateway-service auth-service project-service task-service
 
 start : down remove up
 
