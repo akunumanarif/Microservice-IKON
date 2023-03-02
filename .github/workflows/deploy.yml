@@ -1,9 +1,3 @@
-on:
-  push:
-    branches: [ DAY-22 ]
-
-  workflow_dispatch:
-
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -16,12 +10,12 @@ jobs:
           mvn compile
 
       - name: compile gateway service
-        run: |    
+        run: |
           cd gateway-service
           mvn compile
 
       - name: compile project service
-        run: |     
+        run: |
           cd project-service
           mvn compile
 
@@ -36,19 +30,27 @@ jobs:
           mvn compile
 
       - name: compile rabbitmq-producer service
-        run: |    
+        run: |
           cd rabbitmq-producer-service
           mvn compile
-      #          cd gateway-service
-      #          mvn compile
-      #      - name: test
-      #        run: |
-      #          cd auth-service
-      #          mvn test
 
-      - name: Run MakeFile
-        run: |
-          make
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./docker-compose.yaml
+          push: true
+          tags: |
+            docker.io/${{ secrets.DOCKER_USERNAME }}/gateway-service:latest
+            docker.io/${{ secrets.DOCKER_USERNAME }}/auth-service:latest
+            docker.io/${{ secrets.DOCKER_USERNAME }}/project-service:latest
+            docker.io/${{ secrets.DOCKER_USERNAME }}/task-service:latest
+            docker.io/${{ secrets.DOCKER_USERNAME }}/rabbitmq-consumer-service:latest
+            docker.io/${{ secrets.DOCKER_USERNAME }}/rabbitmq-producer-service:latest
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
 
 
 
