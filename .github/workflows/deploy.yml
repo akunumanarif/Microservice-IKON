@@ -14,6 +14,21 @@ jobs:
         run: |
           cd auth-service
           mvn compile
+          
+          cd gateway-service
+          mvn compile
+          
+          cd project-service
+          mvn compile
+          
+          cd task-service
+          mvn compile
+          
+          cd rabbitmq-consumer-service
+          mvn compile
+          
+          cd rabbitmq-producer-service
+          mvn compile
       #          cd gateway-service
       #          mvn compile
       #      - name: test
