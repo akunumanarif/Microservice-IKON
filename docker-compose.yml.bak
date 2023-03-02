@@ -14,7 +14,7 @@ services:
       - "8080:8080"
   auth-service:
     platform: 'linux/amd64'
-    image: 'auth-service:latest'
+    image: 'auth-service:latest' 
     container_name: auth-service
     build:
       context: ./auth-service
@@ -112,9 +112,9 @@ services:
     image: 'mysql:8.0'
     container_name: user-db
     environment:
-      - POSTGRES_USER=user_db
-      - POSTGRES_PASSWORD=user_db
-      - POSTGRES_DB=user_db
+      - MYSQL_USER=user_db
+      - MYSQL_PASSWORD=user_db
+      - MYSQL_DATABASE=user_db
     volumes:
       - user_db:/var/lib/mysql/data
     ports:
@@ -123,9 +123,9 @@ services:
     image: 'mysql:8.0'
     container_name: project-db
     environment:
-      - POSTGRES_USER=project_db
-      - POSTGRES_PASSWORD=project_db
-      - POSTGRES_DB=project_db
+      - MYSQL_USER=user_db
+      - MYSQL_PASSWORD=user_db
+      - MYSQL_DATABASE=user_db
     volumes:
       - project_db:/var/lib/mysql/data
     ports:
@@ -134,9 +134,9 @@ services:
     image: 'mysql:8.0'
     container_name: task-db
     environment:
-      - POSTGRES_USER=task_db
-      - POSTGRES_PASSWORD=task_db
-      - POSTGRES_DB=task_db
+      - MYSQL_USER=user_db
+      - MYSQL_PASSWORD=user_db
+      - MYSQL_DATABASE=user_db
     volumes:
       - task_db:/var/lib/mysql/data
     ports:
