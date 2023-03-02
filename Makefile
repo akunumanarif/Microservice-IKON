@@ -13,8 +13,11 @@ down :
 
 remove :
 	docker image rm -f ${APP_IMAGE_LIST}
+	
+up :
+	docker compose up -d
 
-build:
+build :
 	docker compose build
 #
 # restart: down up
@@ -23,7 +26,7 @@ build:
 # 	cp .env.example .env
 # 	nano .env
 
-push:
+push :
 	$(foreach img, ${APP_IMAGE_LIST}, \
 		docker tag ${img} ${DOCKERHUB_USERNAME}/${DOCKERHUB_REPOSITORY}:${img} && \
 		docker push ${DOCKERHUB_USERNAME}/${DOCKERHUB_REPOSITORY}:${img} &&) true
