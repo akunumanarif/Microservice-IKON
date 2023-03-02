@@ -18,7 +18,7 @@ jobs:
 #          mvn compile
       - name: test
         run: |
-          cd gateway-service
+          cd auth-service
           mvn test
 
       - name: Configure Certificate
