@@ -31,45 +31,6 @@ services:
       - "8081"
     ports:
       - "8081:8081"
-  rabbitmq-producer-service:
-    platform: 'linux/amd64'
-    image: 'rabbitmq-producer-service:latest'
-    container_name: rabbitmq-producer-service
-    build:
-      context: ./rabbitmq-producer-service
-      dockerfile: Dockerfile
-    depends_on:
-      - rabbitmq
-    environment:
-      - SPRING_RABBITMQ_HOST=rabbitmq
-      - SPRING_RABBITMQ_PORT=5672
-      - SPRING_RABBITMQ_USERNAME=guest
-      - SPRING_RABBITMQ_PASSWORD=guest
-      - SPRING_RABBITMQ_VIRTUAL-HOST=/
-    expose:
-      - "8084"
-    ports:
-      - "8084:8084"
-  rabbitmq-consumer-service:
-    platform: 'linux/amd64'
-    image: 'rabbitmq-consumer-service:latest'
-    container_name: rabbitmq-consumer-service
-    build:
-      context: ./rabbitmq-consumer-service
-      dockerfile: Dockerfile
-    depends_on:
-      - rabbitmq
-    environment:
-      - SPRING_RABBITMQ_HOST=rabbitmq
-      #      port for amqp(advance message queueing protocol)
-      - SPRING_RABBITMQ_PORT=5672
-      - SPRING_RABBITMQ_USERNAME=guest
-      - SPRING_RABBITMQ_PASSWORD=guest
-      - SPRING_RABBITMQ_VIRTUAL-HOST=/
-    expose:
-      - "8086"
-    ports:
-      - "8086:8086"
   project-service:
     platform: 'linux/amd64'
     image: 'project-service:latest'
