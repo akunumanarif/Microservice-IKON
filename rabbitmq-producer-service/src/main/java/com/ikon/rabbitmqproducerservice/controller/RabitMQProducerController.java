@@ -1,7 +1,7 @@
 package com.ikon.rabbitmqproducerservice.controller;
 
-import com.beyonder.rabbitmqproducerservice.config.RabbitProducerConfig;
-import com.beyonder.rabbitmqproducerservice.dto.*;
+import com.ikon.rabbitmqproducerservice.config.RabbitProducerConfig;
+import com.ikon.rabbitmqproducerservice.dto.*;
 import com.ikon.rabbitmqproducerservice.dto.RabbitMQProducerConsumerDTO;
 import com.ikon.rabbitmqproducerservice.dto.ResponseDTO;
 import lombok.RequiredArgsConstructor;
