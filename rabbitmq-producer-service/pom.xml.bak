@@ -8,7 +8,7 @@
         <version>2.7.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.beyonder</groupId>
+    <groupId>com.ikon</groupId>
     <artifactId>rabbitmq-producer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>rabbitmq-producer-service</name>
