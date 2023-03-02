@@ -1,6 +1,6 @@
 package com.ikon.taskservice.model;
 
-import com.ikon.projectservice.model.Project;
+
 import com.ikon.taskservice.util.TaskStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
