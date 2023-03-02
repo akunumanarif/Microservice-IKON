@@ -10,23 +10,33 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: compile
+      - name: compile auth service
         run: |
           cd auth-service
           mvn compile
-          
+
+      - name: compile gateway service
+        run: |    
           cd gateway-service
           mvn compile
-          
+
+      - name: compile project service
+        run: |     
           cd project-service
           mvn compile
-          
+
+      - name: compile task service
+        run: |
           cd task-service
           mvn compile
-          
+
+      - name: compile rabbitmq-consumer service
+        run: |
           cd rabbitmq-consumer-service
           mvn compile
-          
+
+      - name: compile rabbitmq-producer service
+        run: |    
           cd rabbitmq-producer-service
           mvn compile
       #          cd gateway-service
