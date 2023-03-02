@@ -124,7 +124,7 @@ services:
     container_name: project-db
     environment:
       - POSTGRES_USER=project_db
-      - POSTGRES_PASSWORD=project_db 
+      - POSTGRES_PASSWORD=project_db
       - POSTGRES_DB=project_db
     volumes:
       - project_db:/var/lib/mysql/data
