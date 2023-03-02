@@ -34,13 +34,11 @@ jobs:
           cd rabbitmq-producer-service
           mvn compile
       - name: Build and push Docker images
-        env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+#        env:
+#         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+#          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
-          make build
-          make tag
-          make push
+          make
 
 
 

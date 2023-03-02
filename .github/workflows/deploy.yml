@@ -25,14 +25,6 @@ jobs:
         run: |
           cd task-service
           mvn compile
-      - name: compile rabbitmq-consumer service
-        run: |
-          cd rabbitmq-consumer-service
-          mvn compile
-      - name: compile rabbitmq-producer service
-        run: |
-          cd rabbitmq-producer-service
-          mvn compile
       - name: Build and push Docker images
 #        env:
 #         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
