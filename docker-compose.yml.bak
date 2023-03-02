@@ -158,4 +158,4 @@ volumes:
   project_db:
   task_db:
   rabbit_mq1:
-  rabbit_mq2: 
+  rabbit_mq2:
