@@ -59,6 +59,7 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- 
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>
@@ -95,5 +96,5 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
-
+	-->
 </project>
