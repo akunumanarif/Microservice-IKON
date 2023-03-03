@@ -99,7 +99,7 @@ services:
     depends_on:
       - task-db
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://task-db:3306/task_db
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://task-db:5432/task_db
       - SPRING_DATASOURCE_USERNAME=task_db
       - SPRING_DATASOURCE_PASSWORD=task_db
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
@@ -134,9 +134,9 @@ services:
     image: 'mysql:8.0'
     container_name: task-db
     environment:
-      - MYSQL_USER=task_db
-      - MYSQL_PASSWORD=task_db
-      - MYSQL_DATABASE=task_db
+      - POSTGRES_USER=task_db
+      - POSTGRES_PASSWORD=task_db
+      - POSTGRES_DATABASE=task_db
     volumes:
       - task_db:/var/lib/mysql/data
     ports:

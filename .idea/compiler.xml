@@ -13,8 +13,8 @@
         <module name="task-service" />
         <module name="crud-swagger" />
         <module name="rabbitmq-producer-service" />
+        <module name="rabbitmq-consumer-service" />
         <module name="team-service" />
-        <module name="task-service (1)" />
         <module name="project-service" />
         <module name="websocket-service" />
       </profile>
@@ -25,6 +25,7 @@
       <module name="crud-swagger" target="17" />
       <module name="gateway-service" target="11" />
       <module name="project-service" target="11" />
+      <module name="rabbitmq-consumer-service" target="11" />
       <module name="rabbitmq-producer-service" target="11" />
       <module name="task-service" target="11" />
       <module name="task-service (1)" target="11" />
@@ -39,6 +40,7 @@
       <module name="crud-swagger" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="project-service" options="-parameters" />
+      <module name="rabbitmq-consumer-service" options="-parameters" />
       <module name="rabbitmq-producer-service" options="-parameters" />
       <module name="task-service" options="-parameters" />
       <module name="task-service (1)" options="-parameters" />
