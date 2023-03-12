@@ -6,7 +6,14 @@
     <file url="file://$PROJECT_DIR$/crud-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/crud-swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-base-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-consumer-product-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-consumer-product-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-consumer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-consumer-user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-consumer-user-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-producer-order-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-producer-order-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-producer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/project-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmq-consumer-service/src/main/java" charset="UTF-8" />

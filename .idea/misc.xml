@@ -3,18 +3,15 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/auth-service/pom.xml" />
-        <option value="$PROJECT_DIR$/crud-swagger/pom.xml" />
-        <option value="$PROJECT_DIR$/websocket-service/pom.xml" />
-        <option value="$PROJECT_DIR$/crud-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/project-service/pom.xml" />
-        <option value="$PROJECT_DIR$/task-service/pom.xml" />
-        <option value="$PROJECT_DIR$/team-service/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbitmq-producer-service/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway-service/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbitmq-consumer-service/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-consumer-service/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-producer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-base-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-producer-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-consumer-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-consumer-product-service/pom.xml" />
       </list>
     </option>
   </component>
