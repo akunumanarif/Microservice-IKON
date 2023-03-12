@@ -10,9 +10,11 @@
         <option value="$PROJECT_DIR$/project-service/pom.xml" />
         <option value="$PROJECT_DIR$/task-service/pom.xml" />
         <option value="$PROJECT_DIR$/team-service/pom.xml" />
-        <option value="$PROJECT_DIR$/rabbitmq-consumer-service/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-producer-service/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-consumer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-consumer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-producer-service/pom.xml" />
       </list>
     </option>
   </component>
